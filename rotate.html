@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+
+			.parent{
+				margin: 100px;
+				width:400px;
+				height: 400px;
+				position: relative;
+			}
+			.child1{
+				box-sizing: border-box;
+				width: 200px;
+				height: 200px;
+				border: 3px solid ;
+				border-radius: 100px;
+				
+				border-top-color:greenyellow;
+				border-bottom-color:transparent ;
+				border-left-color:transparent;
+				border-right-color:transparent ;
+				
+				position: absolute;
+				left: calc(50% - 100px);
+				top: calc(50% - 100px);
+				
+				
+				animation: rotate 2s infinite 1s;
+			}
+			
+			.child2{
+				box-sizing: border-box;
+				width: 160px;
+				height: 160px;
+				border: 3px solid #000;
+				border-radius: 100px;
+				
+				border-top-color:yellow ;
+				border-bottom-color:transparent ;
+				border-left-color:transparent;
+				border-right-color:transparent ;
+				
+				position: absolute;
+				left: calc(50% - 80px);
+				top: calc(50% - 80px);
+				
+				animation: rotate 2s infinite 0.6s;
+			}
+			
+			.child3{
+				box-sizing: border-box;
+				width: 120px;
+				height: 120px;
+				border: 3px solid #000;
+				border-radius: 100px;
+				
+				border-top-color:orangered ;
+				border-bottom-color:transparent ;
+				border-left-color:transparent;
+				border-right-color:transparent ;
+				
+				position: absolute;
+				left: calc(50% - 60px);
+				top: calc(50% - 60px);
+				animation: rotate 2s infinite 0.4s;
+			}
+			
+			
+			.child4{
+				box-sizing: border-box;
+				width: 80px;
+				height: 80px;
+				border: 3px solid #000;
+				border-radius: 100px;
+				
+				border-top-color:#ccc ;
+				border-bottom-color:transparent ;
+				border-left-color:transparent;
+				border-right-color:transparent ;
+				
+				position: absolute;
+				left: calc(50% - 40px);
+				top: calc(50% - 40px);
+				animation: rotate 2s infinite 0.2s;
+			}
+			
+			.child5{
+				box-sizing: border-box;
+				width: 40px;
+				height: 40px;
+				border: 3px solid slateblue;
+				border-radius: 100px;
+				
+				/*border-top-color:slateblue ;
+				border-bottom-color:slateblue ;
+				border-left-color:slateblue;
+				border-right-color:slateblue ;*/
+				
+				
+				position: absolute;
+				left: calc(50% - 20px);
+				top: calc(50% - 20px);
+				animation: myani 2s infinite 0s;
+			}
+			
+			@keyframes rotate{
+				0%{
+					/*transform: rotate(0deg) */opacity: 0;
+					
+				}
+				50%{
+					/*transform: rotate(360deg) */opacity: 1;;
+				}
+				100%{
+					/*transform: rotate(0deg) */opacity: 0;
+				}
+			}
+			@keyframes myani{
+				0%{
+					/*transform: rotate(0deg) */opacity: 0;
+				}
+				100%{
+					/*transform: rotate(360deg) */opacity: 1;;
+				}
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="parent">
+			<div class="child1"></div>
+			<div class="child2"></div>
+			<div class="child3"></div>
+			<div class="child4"></div>
+			<div class="child5"></div>
+		</div>
+			
+		
+
+	</body>
+
+</html>
